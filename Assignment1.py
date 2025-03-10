@@ -27,7 +27,7 @@ def star_shape(rows):
     result = ""
     for i in range(1, rows + 1):
         result += '*' * i + "\n"
-    return result.rstrip
+    return result.rstrip()
 
 
 # Function 5: While Loop – Counting Multiples of 3
