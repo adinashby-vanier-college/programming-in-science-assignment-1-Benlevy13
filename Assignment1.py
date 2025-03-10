@@ -23,7 +23,7 @@ def check_number(number):
 # Function 4: For Loop – Making a Star Shape
 # This function should return a string representing a star shape.
 def star_shape(rows):
-        result = ""
+    result = ""
     for i in range(1, rows + 1):
         result += '*' * i + "\n"
     return result
