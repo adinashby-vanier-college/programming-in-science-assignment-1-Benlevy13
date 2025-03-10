@@ -27,7 +27,7 @@ def star_shape(rows):
     result = ""
     for i in range(1, rows + 1):
         result += '*' * i + "\n"
-    return result
+    return result.rstrip
 
 
 # Function 5: While Loop – Counting Multiples of 3
@@ -39,10 +39,9 @@ def count_multiples_of_3(limit):
         if num % 3 == 0:
             result.append("Multiple of 3")
         else:
-            result.append(num)
+            result.append(str(num))
         num += 1
-    return result
-
+    return "\n".join(result)
 
 # Function 6: Sum of Even Numbers in a Range
 # This function should calculate and return the sum of even numbers within a given range.
@@ -52,3 +51,4 @@ def sum_of_even_numbers(start, end):
         if num % 2 == 0:
             total += num
     return total
+
