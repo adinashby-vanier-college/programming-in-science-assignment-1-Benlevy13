@@ -13,12 +13,13 @@ def built_in_functions_min(num1, num2, num3):
 # Function 3: Conditional Statements – The If Statement
 # This function should check if a number is positive, negative, or zero and return the corresponding message.
 def check_number(number):
+def check_number(number):
     if number > 0:
-        return "The number is positive."
+        return "Positive"
     elif number < 0:
-        return "The number is negative."
+        return "Negative"
     else:
-        return "The number is zero."
+        return "Zero"
 
 # Function 4: For Loop – Making a Star Shape
 # This function should return a string representing a star shape.
@@ -32,12 +33,14 @@ def star_shape(rows):
 # This function should return a list of numbers from 1 to limit, replacing multiples of 3 with "Multiple of 3".
 def count_multiples_of_3(limit):
     num = 1
-    while num <= 20:
+    result = []
+    while num <= limit:
         if num % 3 == 0:
-            print("Multiple of 3")
+            result.append("Multiple of 3")
         else:
-            print(num)
+            result.append(num)
         num += 1
+    return result
 # Function 6: Sum of Even Numbers in a Range
 # This function should calculate and return the sum of even numbers within a given range.
 def sum_of_even_numbers(start, end):
